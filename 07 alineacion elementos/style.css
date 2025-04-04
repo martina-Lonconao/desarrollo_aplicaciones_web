@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: solid 1px red;
+}
+.container{
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+}
+.row{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+img{
+    height: 200px;
+    background-color: white;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pink{
+    background-color: pink
+}
+
+.yellow{
+    background-color: yellow;
+}
