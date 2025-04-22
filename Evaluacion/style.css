@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: solid 1px ;
+}
+
+.container{
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.titulo h3{
+    margin-top: 10px;
+    margin-left: 20px;
+    }
+
+
+.imagen1 h3{
+        display: flex;
+        padding: 20px;
+}
+
+imagen2{
+    align-items: center;
+    margin-top: 15px;
+}
+
