@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12 tarjeta de usuario</title>
+    <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="nav">
-        <h1 class="nav-title">Perfil</h1>
-        <ul class="nav-links">
-            <li><a href="#">inicio</a></li>
-            <li><a href="#" class="active">Mi Perfil</a></li>
-            <li><a href="#">Conexiones</a></li>
-            <button>Cerrar sesión</button>
-
-            </div>
-        </div>   
-        </ul>
+    <nav class="navbar">
+        <div class="col">Perfil</div>
+        <div class="row">
+            <div class="col1"><a href="#">Inicio</a></div>
+            <div class="col2"><a href="#">Mi perfil</a></div>
+            <div class="col3"><a href="#">Conexiones</a></div>
+            <button class="col4"><a href="#">Cerrar sesión</a></button>
+        </div>
     </nav>
+
+    <div class="main-container">
+        <div class="profile">
+            <div class="header"></div>
+            <img src="img/0003.png" alt="Foto de perfil" class="avatar">
+            <h1>Jane Doe</h1>
+            <p class = "ubicacion">Bergen, Noruega</p>
+            <p class="info">Desarrolladora Frontend</p>
+            <p class="info">Conocimientos en HTML, CSS, JavaScript</p>
+            <a href="#" class="editar"><img src="img/img0004.png" alt="editar"> Editar perfil</a>
+        </div>
+        <div class="right-panel">
+            <div class="card solicitudes">
+                <h3>Solicitudes de conexión <a href="#">Ver todas</a></h3>
+                <div class="solicitud">
+                    <img src="img/0003.png" alt="Foto de perfil" class="avatar-small">
+                    <span class="nombre">Steve Jobs</span>
+                    <div class="action-buttons">
+                        <button class="accept"><img src="img/0001.png" alt="Aceptar"></button>
+                        <button class="reject"><img src="img/0002.png" alt="Rechazar"></button>
+                    </div>
+                </div>
+                <div class="solicitud">
+                    <img src="img/0003.png" alt="Foto de perfil" class="avatar-small">
+                    <span class="nombre">Bill Gates</span>
+                    <div class="action-buttons">
+                        <button class="accept"><img src="img/0001.png" alt="Aceptar"></button>
+                        <button class="reject"><img src="img/0002.png" alt="Rechazar"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-conexiones">
+                <h3>Tus conexiones <a href="#">Ver todas</a></h3>
+                <ul>
+                    <li><img src="img/0003.png" alt="Foto de perfil" class="avatar">Richard Stallman</li>
+                    <li><img src="img/0003.png" alt="Foto de perfil" class="avatar">Linus Torvalds</li>
+                    <li><img src="img/0003.png" alt="Foto de perfil" class="avatar">Ada Lovelace</li>
+                    <li><img src="img/0003.png" alt="Foto de perfil" class="avatar">Grace Hopper</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
