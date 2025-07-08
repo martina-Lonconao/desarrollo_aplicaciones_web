@@ -77,7 +77,76 @@ function tablaMultiplicar(){
 
 /*Ejercicio 6: Sumar hasta que se ingrese cero
 Con while, sigue pidiendo números con prompt() y súmalos, hasta que el usuario escriba 0. Muestra el total acumulado.*/
-
 function sumarHastaCero(){
-    let suma =0;;;
+    let suma=0
+    let numero;
+    do{
+        numero=parseFloat(prompt("Ingresa un numero para sumar (0 para terminar):"));
+        suma += numero;
+
+    } while(numero !==0);
+    document.getElementById("resultado6").innerHTML=
+    `<p>La suma total acumulada es : <strong>${suma}<strong></p>`;
+}
+
+/*Ejercicio 7: Mostrar letras de una palabra
+Pide al usuario una palabra y usa un for para mostrar cada letra por separado en el HTML*/;
+
+function mostrarletrasPalabra() {
+    let palabra = prompt("ingresa una palabra");
+    let letras = [];
+    for (let i = 0; i < palabra.length; i++) {
+        letras.push(palabra[i]);
+    }   
+    document.getElementById("resultado7").innerHTML =
+    `para la palabra <strong>${palabra}</strong> Las letras son: <br> 
+    <strong>${letras.join(" -")}</strong>`;
+}
+
+/* Ejercicio 8: Validar contraseña
+Pide una contraseña al usuario y sigue pidiendo con while hasta que escriba "admin123". Luego, muestra "Acceso concedido".*/
+
+function validarContrasena(){
+    let contrasena ="";
+    while(contrasena !== "admin123"){
+        contrasena = prompt("Ingresa la contraseña (admin123 para acceder):");
+        if (contrasena === "admin123"){
+            document.getElementById("resultado8").innerHTML =
+            `<p>Acesso concedido</p>`;
+        }
+    
+    }
+
+}
+
+/*Ejercicio 9: Promedio de notas
+Pide con prompt() cuántas notas va a ingresar. Usa un for para pedir cada nota, calcula el promedio y lo muestra.*/
+
+
+function promedioNotas(){
+    let cantidadNotas= parseInt(prompt("¿Cuantas notas vas a ingresar?"));
+    let suma =0;
+    for(let i=0; i<cantidadNotas; i++){
+        let nota = parseFloat(prompt(`Ingresa la nota ${i+1}:`));
+        suma +=nota;
+    }
+    let promedio = suma/ cantidadNotas;
+    document.getElementById("resultado9").innerHTML=
+    `<p>El promedio de las notas ingresadas es: <strong>${promedio.toFixed(2)}</strong></p>`;
+}
+
+
+/* Ejercicio 10: Contar cuántos son mayores de edad
+Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+)*/
+function contarMayoresEdad() {
+    let cantidadPersonas = parseInt(prompt("¿cuantas personas vas aingresar?"));
+    let mayoresEdad = 0;
+    for (let i = 0; i < cantidadPersonas; i++){
+        let edad = parseInt(prompt(`ingresa la edad de la personas ${i + 1}`));
+        if (edad >= 18) {
+            mayoresEdad++;
+        } 
+    }   
+    document.getElementById("resultado10").innerHTML =
+        `<p> El numero de personas mayores de edad es: <strong>${mayoresEdad}</strong> </p>`;
 }
