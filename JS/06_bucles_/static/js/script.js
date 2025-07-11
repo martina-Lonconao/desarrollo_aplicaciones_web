@@ -139,7 +139,7 @@ function promedioNotas(){
 /* Ejercicio 10: Contar cuántos son mayores de edad
 Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+)*/
 function contarMayoresEdad() {
-    let cantidadPersonas = parseInt(prompt("¿cuantas personas vas aingresar?"));
+    let cantidadPersonas = parseInt(prompt("¿cuantas personas vas a ingresar?"));
     let mayoresEdad = 0;
     for (let i = 0; i < cantidadPersonas; i++){
         let edad = parseInt(prompt(`ingresa la edad de la personas ${i + 1}`));
