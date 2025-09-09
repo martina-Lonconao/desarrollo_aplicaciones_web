@@ -18,4 +18,27 @@ const error = document.createElement('p');
 form.appendChild(resultado);
 form.appendChild(error);
 
-//
+
+// Función para capitalizar la primera letra de cada palabra
+function capitalizarNombre(nombre) {
+    return nombre.split(' ').map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1).toLowerCase()).join(' ');
+}   
+
+// Función para validar el formulario
+function validarFormulario(nombre, edad, curso, jornada, aceptaReglamento) {
+    if (nombre.length < 3) {
+        return 'El nombre debe tener al menos 3 caracteres.';
+    }
+
+    if (isNaN(edad) || edad < 18 || edad > 120) {
+        return 'La edad debe estar entre 18 y 65 años.';
+    }
+    if (!curso) {
+        return 'Debe seleccionar un curso.';
+    }       
+    if (!jornada) {
+        return 'Debe seleccionar una jornada.';
+    }
+    if (!aceptaReglamento) {
+        return 'Debe aceptar el reglamento.';
+    }}
