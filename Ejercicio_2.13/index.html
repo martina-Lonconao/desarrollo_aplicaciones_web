@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <script defer src="static/js/main.js"></script>
+</head>
+<body>
+    <h1>Gestor de Tareas</h1>
+
+    <form id="taskForm">
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description" required minlength="3">
+
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="priority">Prioridad:</label>
+        <select id="priority" name="priority">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+
+        <button type="submit">Agregar tarea</button>
+    </form>
+
+    <label>
+        <input type="checkbox" id="filterHighPriority">
+        Mostrar solo Alta
+    </label>
+
+    <div id="taskList"></div>
+</body>
+</html>
