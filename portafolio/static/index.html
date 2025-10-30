@@ -1,86 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EL CLIMA</title>
+    <title>Portafolio | Martina Lonconao</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="top">
-        <div class="nav-container">
-            <h1>DojoWeather</h1>
-            <ul>
-                <li><a href="#" onclick="alerta()">Burbank</a></li>
-                <li><a href="#" onclick="alerta()">Chicago</a></li>
-                <li><a href="#" onclick="alerta()">Dallas</a></li>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Mi Portafolio</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+
+            <li><a class="nav-link" href="#home">Inicio</a></li>
+            <li><a class="nav-link" href="#about">Sobre mí</a></li>
+            <li><a class="nav-link" href="#services">Servicios</a></li>
+            <li><a class="nav-link" href="#skills">Habilidades</a></li>
+            <li><a class="nav-link" href="#education">Educación</a></li>
+            <li><a class="nav-link" href="#experience">Experiencia</a></li>
+            <li><a class="nav-link" href="#portfolio">Proyectos</a></li>
+            <li><a class="nav-link" href="#contact">Contacto</a></li>
             </ul>
         </div>
-    </div>
+        </div>
+    </nav>
 
-    <div class="main_container">
+    <header id="home">
+        <h1>Alayne Theodore</h1>
+        <p>Hi, I'm a software developer in Chicago</p>
+        <button id="scrollButton">Bajar</button>
+    </header>
 
-        <div class="top_container">
-            <h1>San Jose</h1>
-            <div class="select_container">
-                <p>Show temperature in </p>
-                <select name="" id="select" onchange="cambiar(this.value)">
-                    <option value="C">°C</option>
-                    <option value="F">°F</option>
-                </select>
-            </div>
+        <!-- ===== ABOUT ME SECTION ===== -->
+    <section id="about" class="about-section">
+        <h2>SOBRE MI</h2>
+
+        <div class="about-container">
+        <!-- Texto -->
+        <div class="about-text">
+            <p>
+            Mi nombre es Martina Lonconao soy egresada de programacion. tengo conocimientos basicos en lenguajes de programación como HTML, CSS y JavaScript.
+            Ademas de tener conocimientos basicos en base de datos especificamente en Mysql. 
+            </p>
+            <p>
+            Me considero una persona responsable y comprometida con mi trabajo, siempre dispuesta a aprender y mejorar mis habilidades.
+            y estoy emocionada por comenzar mi carrera en el desarrollo web y contribuir a proyectos interesantes y aprender nuevas tecnologias.
+            
+            </p>
         </div>
 
-        <div class="container">
-            <div class="col">
-                <h1>Today</h1>
-                <img src="static/pages/some_rain.png" alt="">
-                <p>some rain</p>
-                <div class="row_container">
-                    <div class="micro_cont"><span id="grados" class="grados_img">24</span><p>°</p></div>
-                    <div class="micro_cont2"><span id="grados1" class="grados_img2">18</span><p>°</p></div>
-                </div>
+        <!-- Skills -->
+        <div class="skills">
+            <div class="skill">
+            <p>HTML<span>90%</span></p>
+            <div class="skill-bar">
+                <div class="fill html"></div>
             </div>
-            <div class="col">
-                <h1>Tomorrow</h1>
-                <img src="img/some_sun.png" alt="">
-                <p>some sun</p>
-                <div class="row_container">
-                    <div class="micro_cont"><span id="grados2" class="grados_img">27</span><p>°</p></div>
-                    <div class="micro_cont2"><span id="grados3" class="grados_img2">19</span><p>°</p></div>
-                </div>
             </div>
-            <div class="col">
-                <h1>Friday</h1>
-                <img src="img/some_clouds.png" alt="">
-                <p>some clouds</p>
-                <div class="row_container">
-                    <div class="micro_cont"><span id="grados4" class="grados_img">21</span><p>°</p></div>
-                    <div class="micro_cont2"><span id="grados5" class="grados_img2">16</span><p>°</p></div>
-                </div>
+
+            <div class="skill">
+            <p>JAVASCRIPT <span>75%</span></p>
+            <div class="skill-bar">
+                <div class="fill js"></div>
             </div>
-            <div class="col">
-                <h1>Saturday</h1>
-                <img src="static/pages/some_sun.png" alt="">
-                <p>some sun</p>
-                <div class="row_container">
-                    <div class="micro_cont"><span id="grados6" class="grados_img">26</span><p>°</p></div>
-                    <div class="micro_cont2"><span id="grados7" class="grados_img2">21</span><p>°</p></div>
+            </div>
+
+            <div class="skill">
+            <p>CSS<span>75%</span></p>
+            <div class="skill-bar">
+                <div class="fill react"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== WHAT I DO SECTION ===== -->
+    <section id="services" class="services-section">
+        <h2>WHAT I DO</h2>
+
+        <div class="services-container">
+        <div class="service">
+            <img src="https://cdn-icons-png.flaticon.com/512/1829/1829582.png" alt="Design Icon">
+            <h3>Design</h3>
+            <p>Keeping it simple. Centered on content and functionality.</p>
+        </div>
+
+        <div class="service">
+            <img src="https://cdn-icons-png.flaticon.com/512/1829/1829459.png" alt="Development Icon">
+            <h3>Development</h3>
+            <p>My goals are to focus on clean code and newest technologies.</p>
+        </div>
+
+        <div class="service">
+            <img src="https://cdn-icons-png.flaticon.com/512/3262/3262266.png" alt="Problem Solving Icon">
+            <h3>Problem Solving</h3>
+            <p>Creative approach to research, analysis and decision making.</p>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <h1>CONTACTO</h1>
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2 class="get-in-touch">ponte en contacto</h2>
+
+                <div class="contact-item">
+                    <h3>EMAIL</h3>
+                    <a href="mailto:alayne.theodore5@gmail.com">martinalonconao@liceovvh.cl</a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>GITHUB</h3>
+                    <a href="https://github.com/alaynetheodore5" target="_blank">
+                        github.com/martina-lonconao
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <h3>TELEFONO</h3>
+                    <a href="https://linkedin.com/in/astheodore" target="_blank">
+                        +569 38811760
+                    </a>
                 </div>
             </div>
         </div>
-        <div id="cookie_container" class="cookie_container">
-            <img src="static/pages/cookie-removebg-preview.png" alt="">
-            <div class="container_text">
-                <span id="cookie_title" class="cookie_title">Stop! Cookie time</span>
-                <span id="cookie_text" class="cookie_text">We use cookies (sadly not the edible ones) to personalize content and ads, to aprove solcial media features and to analyse aour traffic.<li><a href="#">Read more...</a></li></span>
-
-            </div>
-            <button class="btn" onclick="hide(cookie_container)">I accept</button>
-
-        </div>
-    </div>
-
-    <script src="static/js/script.js"></script>
+    </section>
 </body>
 </html>
